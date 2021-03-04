@@ -1,0 +1,72 @@
+body {
+    background-color: #e6e6e6;
+}
+#color-label {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    height: 50px;
+    width: 250px;
+    border: solid 5px rgb(255, 255, 255);
+}
+#color-picker {
+    margin:0;
+    position: absolute;
+    top: 80px; 
+    background-color: white;
+    height: 320px;
+    width: 250px;
+    padding: 5px;
+}
+#saved {
+    position: absolute;
+    top: 10px;
+    left: 275px;
+    background-color: #ffffff;
+    height: 390px;
+    width: 235px;
+    padding: 5px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 1vw;
+}
+#grid > div {
+    font-size: 1vw;
+    padding: .5em;
+    text-align: right;
+}
+#grid label {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 0;
+    
+    background-color: #ffffff;
+    margin: 0;
+}
+canvas:hover {
+    cursor: crosshair;
+}
+
+label, input {
+    width: 100px;
+    margin: 2px;
+}
+.rgb input {
+    width: 30px;
+    margin: 2px;
+}
+.hsv input {
+    width: 30px;
+    margin: 2px;
+}
+#apply {
+    width: 30%;
+}
+#save, #clear {
+    margin: 5px;
+    padding: 5px;
+    width: 45%;
+}

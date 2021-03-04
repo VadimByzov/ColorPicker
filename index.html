@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Color Picker</title>
+</head>
+<body>
+    <label id="color-label" style="background-color: red"></label>
+
+    <div id="color-picker">
+        <canvas id="color-block" height="200" width="215"></canvas>
+        <canvas id="color-strip" height="200" width="30"></canvas>
+        
+        <div>
+            <div class="hex">
+                <label>Hex: #</label>
+                <input id="hex"></input>
+                <button id="apply">Apply</button>
+            </div>
+            <div class="rgb">
+                <label>R:</label>
+                <input id="red"></input>
+
+                <label>G:</label>
+                <input id="green"></input>
+
+                <label>B:</label>
+                <input id="blue"></input>
+            </div>
+            <div class="hsv">
+                <label>H:</label>
+                <input id="hue"></input>
+            
+                <label>S:</label>
+                <input id="sat"></input>
+          
+                <label>V:</label>
+                <input id="val"></input>
+            </div>
+        </div> 
+
+        <button id="save">Save pallete</button>
+        <button id="clear">Clear palletes</button>
+    </div>
+
+    
+
+    <div id="saved">
+        <p>Saved palletes</p>
+        <div id="grid">
+        </div>
+    </div>
+
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src='main.js'></script>
+</body>
+</html>
